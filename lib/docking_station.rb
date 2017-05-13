@@ -8,10 +8,11 @@ class DockingStation
 
   def dock(bike)
     # we need to return the bike we dock
-    bike
+    @bike = bike
   end
 
   def bike
+    @bike
   end
 
 end
