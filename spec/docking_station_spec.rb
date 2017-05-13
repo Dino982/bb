@@ -26,4 +26,14 @@ describe DockingStation do
     expect(subject.bike).to eq bike
   end
 
+  describe '#release_bike' do
+    # use of # before method name implies its an instance method
+    it 'releases a bike' do
+      bike = Bike.new
+      subject.dock(bike)
+      # we want to release the bike we docked
+      expect(subject.release_bike).to eq bike
+    end
+  end
+
 end
